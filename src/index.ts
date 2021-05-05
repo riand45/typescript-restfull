@@ -9,6 +9,7 @@ import {config as dotenv} from 'dotenv';
 //Router
 import UserRoute from './routes/UserRoute';
 import AuthRoute from './routes/AuthRoute';
+import TodoRoute from './routes/TodoRoute';
 
 class App {
   public app: Application;
@@ -35,6 +36,7 @@ class App {
 
     this.app.use("/api/v1/users", UserRoute);
     this.app.use("/api/v1/auth", AuthRoute);
+    this.app.use("/api/v1/todos", TodoRoute);
   }
 }
 

@@ -23,25 +23,25 @@ class UserController implements IController {
   show(req: Request, res: Response): Response {
     const {id} = req.params;
 
-    let user = data.find(item => item.id == id);
+    // let user = data.find(item => item.id == id);
 
-    return res.send(user);
+    return res.send('crete');
   }
   update(req: Request, res: Response): Response {
     const {id} = req.params;
     const {name} = req.body;
 
-    let user = data.find(item => item.id == id);
-    user.name = name;
+    // let user = data.find(item => item.id == id);
+    // user.name = name;
 
-    return res.send(data);
+    return res.send('update');
   }
   delete(req: Request, res: Response): Response {
     const {id} = req.params;
 
-    let user = data.filter(item => item.id != id);
+    // let user = data.filter(item => item.id != id);
 
-    return res.send(user);
+    return res.send('delete');
   }
 }
 
