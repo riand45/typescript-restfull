@@ -40,7 +40,7 @@ class App {
   }
 }
 
-const port:number = 3000;
+const port:number = 200;
 const app = new App().app;
 app.listen(port, () => {
   console.log(`Run application with port ${port}`);
